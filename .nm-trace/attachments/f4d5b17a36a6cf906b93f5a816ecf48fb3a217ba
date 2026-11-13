@@ -1,0 +1,398 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test-Near miss Creation.spec.ts >> test Near miss Creation
+- Location: tests\test-Near miss Creation.spec.ts:3:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByText('Script error occurred in')
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" getByText('Script error occurred in') with timeout 15000ms
+  - waiting for getByText('Script error occurred in')
+
+```
+
+```yaml
+- banner:
+  - button ""
+  - link "":
+    - /url: /welcome
+  - link "":
+    - /url: /welcome
+  - text: /
+  - link "Incident Management - Template":
+    - /url: /workspace/3/cover
+  - text: /
+  - button ""
+  - button ""
+  - button ""
+  - text: 
+  - link "":
+    - /url: /dashboard/pending
+  - button ""
+- banner:
+  - text: Incident reports
+  - complementary:
+    - button ""
+    - button ""
+    - link "":
+      - /url: /workspace/3/34l/settings
+    - button ""
+    - text:  Tree view
+    - checkbox [checked]
+- list:
+  - listitem:
+    - list:
+      - listitem:
+        - list:
+          - listitem:  Nr 
+          - listitem: Title
+          - listitem: Description
+          - listitem: Date of occurrence
+          - listitem: Assigned to
+          - listitem: Status
+          - listitem: 
+          - listitem: 
+      - listitem:
+        - table:
+          - rowgroup:
+            - 'row "incident: near miss -01    Work in progress "':
+              - cell:
+                - textbox
+              - 'cell "incident: near miss -01"':
+                - textbox: "incident: near miss -01"
+              - cell:
+                - textbox
+              - cell "":
+                - text: 
+                - textbox
+              - cell ""
+              - cell " Work in progress"
+              - cell ""
+              - cell
+  - listitem:
+    - list:
+      - listitem:
+        - list:
+          - listitem: "21016"
+          - listitem:
+            - link "Bharat Jogarana 1":
+              - /url: /workspace/3/34l/1603
+          - listitem: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21015"
+          - listitem:
+            - link "Bharat":
+              - /url: /workspace/3/34l/1602
+          - listitem: Test Description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21013"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674753823"':
+              - /url: /workspace/3/34l/1503
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21012"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674597965"':
+              - /url: /workspace/3/34l/1502
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21011"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674475529"':
+              - /url: /workspace/3/34l/1501
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21010"
+          - listitem:
+            - 'link "incident: near miss -01"':
+              - /url: /workspace/3/34l/1401
+          - listitem: incident :near miss description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21009"
+          - listitem:
+            - 'link "incident: near miss -01"':
+              - /url: /workspace/3/34l/1302
+          - listitem: incident :near miss description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21008"
+          - listitem:
+            - 'link "Incidents: Plant layout"':
+              - /url: /workspace/3/34l/1301
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21007"
+          - listitem:
+            - 'link "Incidents: Plant layout"':
+              - /url: /workspace/3/34l/1201
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+  - listitem:
+    - list:
+      - listitem:
+        - text:  Create new item
+        - list:
+          - listitem: "1"
+        - list:
+          - listitem: "20"
+          - listitem: /
+          - listitem: "50"
+          - listitem: /
+          - listitem: "100"
+        - text: · 9 Items
+  - listitem
+- contentinfo:
+  - text: 2.495.1257.10
+  - link "":
+    - /url: http://www.tenforce.com/
+- heading "Create new 'Incident reports' item" [level=3]
+- text: Concept * 
+- textbox: Incident reports
+- button ""
+- text: Title*
+- textbox
+- text: Type* Incident Near miss Description*
+- textbox: incident :near miss description
+- text: Immediate Actions
+- textbox: "incident: near miss action"
+- text: Photos supporting incident investigation
+- button " Browse / Drop files here":
+  - button " Browse / Drop files here"
+- text: Date of occurrence* 
+- textbox: 04/11/2026
+- text: Time of occurrence
+- textbox: 11:00
+- text: Department Edit selection
+- paragraph: Which department is responsible for the area where this incident took place.
+- text: Location* Edit selection
+- paragraph: The site where this incident took place.
+- paragraph: Create or Create & open or  cancel
+```
+
+# Test source
+
+```ts
+  51  |     this.areaPickerButton = page.locator(
+  52  |       '[data-ft-field-label*="Area"], [data-label*="Area"]',
+  53  |     );
+  54  |     this.commitOpenButton = page.locator("#cni_commitopen");
+  55  |     this.scriptErrorMessage = page.getByText("Script error occurred in", {
+  56  |       exact: false,
+  57  |     });
+  58  |     this.severityPickerButton = page
+  59  |       .locator(".newpicker.small > .newpickerbutton");
+  60  |     this.severityOption = page.getByText("2", { exact: true });
+  61  |     this.customField = page.locator("#cni_CNI_CF223 a.addcontent.fixed");
+  62  |     this.locationInput = page.locator("#cni_CNI_CF223");
+  63  |     this.locationCheckbox = page
+  64  |       .locator(".overlay-wrapper.shown")
+  65  |       .last()
+  66  |       .locator('input[type="checkbox"]:visible')
+  67  |       .first();
+  68  |     this.locationConfirm = page
+  69  |       .locator(".overlay-wrapper.shown")
+  70  |       .last()
+  71  |       .getByText("Confirm selection", { exact: true });
+  72  |     this.areaInput = page.locator(
+  73  |       '[data-ft-field-label*="Area"], [data-label*="Area"]',
+  74  |     );
+  75  |     this.areaCheckbox = page
+  76  |       .locator(".overlay-wrapper.shown")
+  77  |       .last()
+  78  |       .locator('input[type="checkbox"]:visible')
+  79  |       .first();
+  80  |     this.areaConfirm = page
+  81  |       .locator(".overlay-wrapper.shown")
+  82  |       .last()
+  83  |       .getByText("Confirm selection", { exact: true });
+  84  |     this.saveButton = page.locator("#cni_commit");
+  85  |     this.incidentText = page.getByText("Incident", { exact: true });
+  86  |     this.recentlyCreated = page.locator("#recentlycreated");
+  87  |     this.cancelButton = page.getByText("cancel", { exact: true });
+  88  |   }
+  89  | 
+  90  |   async open(): Promise<void> {
+  91  |     await expect(this.incidentReportsLink).toBeVisible({ timeout: 60_000 });
+  92  |     await this.incidentReportsLink.click();
+  93  |     await this.page.waitForLoadState("domcontentloaded");
+  94  |     await this.page.waitForTimeout(10_000);
+  95  |   }
+  96  | 
+  97  |   async startCreation(): Promise<void> {
+  98  |     const visibleCreateButton = this.page.locator("#cni:visible").first();
+  99  |     await expect(visibleCreateButton).toBeVisible({ timeout: 60_000 });
+  100 |     await this.page.waitForTimeout(10_000);
+  101 |     await visibleCreateButton.click({ force: true, timeout: 60_000 });
+  102 |     await this.page.waitForTimeout(5_000);
+  103 |   }
+  104 | 
+  105 |   async fillBasicDetails(
+  106 |     title: string,
+  107 |     description: string,
+  108 |   ): Promise<void> {
+  109 |     await this.titleInput.waitFor({ state: "visible", timeout: 60_000 });
+  110 |     await this.titleInput.fill(title);
+  111 |     await this.descriptionInput.fill(description);
+  112 |     await this.categoryInput.click();
+  113 |   }
+  114 | 
+  115 |   async fillNearMissDetails(
+  116 |     title: string,
+  117 |     description: string,
+  118 |     action: string,
+  119 |   ): Promise<void> {
+  120 |     await this.titleInput.waitFor({ state: "visible", timeout: 60_000 });
+  121 |     await this.titleInput.fill("");
+  122 |     await this.titleInput.fill(title);
+  123 |     await this.nearMissOption.click();
+  124 |     await this.descriptionInput.fill(description);
+  125 |     await this.actionInput.fill(action);
+  126 |   }
+  127 | 
+  128 |   async selectNearMissDateAndTime(): Promise<void> {
+  129 |     await this.datePickerButton.click();
+  130 |     await this.dateOption.click();
+  131 |     await this.hourPickerButton.click();
+  132 |     await this.hourOption.fill("09:00");
+  133 |   }
+  134 | 
+  135 |   async selectNearMissLocation(): Promise<void> {
+  136 |     await this.locationPickerButton.click({ force: true });
+  137 |     if ((await this.locationCheckbox.count()) === 0) return;
+  138 |     await this.locationCheckbox.check();
+  139 |     await this.locationConfirm.click();
+  140 |   }
+  141 | 
+  142 |   async selectNearMissArea(): Promise<void> {
+  143 |     if ((await this.areaPickerButton.count()) === 0) return;
+  144 |     await this.areaPickerButton.click();
+  145 |     await this.areaCheckbox.check();
+  146 |     await this.areaConfirm.click();
+  147 |   }
+  148 | 
+  149 |   async submitAndExpectScriptError(): Promise<void> {
+  150 |     await this.commitOpenButton.click();
+> 151 |     await expect(this.scriptErrorMessage).toBeVisible();
+      |                                           ^ Error: expect(locator).toBeVisible() failed
+  152 |   }
+  153 | 
+  154 |   async selectSeverity(): Promise<void> {
+  155 |     await this.severityPickerButton.click();
+  156 |     await this.severityOption.click();
+  157 |   }
+  158 | 
+  159 |   async selectLocation(): Promise<void> {
+  160 |     await this.customField.click();
+  161 |     await this.locationCheckbox.check();
+  162 |     await this.locationConfirm.click();
+  163 |   }
+  164 | 
+  165 |   async selectArea(): Promise<void> {
+  166 |     if ((await this.areaInput.count()) === 0) return;
+  167 |     await this.areaInput.click();
+  168 |     await this.areaCheckbox.check();
+  169 |     await this.areaConfirm.click();
+  170 |   }
+  171 | 
+  172 |   async dismissNextSaveDialog(): Promise<void> {
+  173 |     this.page.once("dialog", async (dialog) => {
+  174 |       await dialog.dismiss();
+  175 |     });
+  176 |   }
+  177 | 
+  178 |   async save(): Promise<void> {
+  179 |     await this.saveButton.click();
+  180 |   }
+  181 | 
+  182 |   async updateIncidentCategory(category: string): Promise<void> {
+  183 |     const categoryOption = this.page
+  184 |       .locator("#overlay1_overlaywrapper")
+  185 |       .getByText(category, { exact: true });
+  186 |     await expect(categoryOption).toBeVisible({ timeout: 60_000 });
+  187 |     await categoryOption.click();
+  188 |   }
+  189 | 
+  190 |   async expectCreated(title: string): Promise<void> {
+  191 |     await this.cancelButton.click();
+  192 |     await expect(
+  193 |       this.page.getByRole("link", { name: title }),
+  194 |     ).toBeVisible();
+  195 |   }
+  196 | }
+  197 | 
+```

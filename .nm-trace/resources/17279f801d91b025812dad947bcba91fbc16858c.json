@@ -1,0 +1,1 @@
+{"$type":"TenForce.Puma.Dto.LoginResponse, Tenforce.Puma.Dto","User":{"$type":"TenForce.Puma.Dto.UserModel, Tenforce.Puma.Dto","TimeZoneIanaId":"Europe/Paris","Id":1,"Name":"System Administrator","LanguageCode":"en-GB","LocaleCode":"en-GB","v":2},"v":0}

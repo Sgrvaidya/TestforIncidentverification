@@ -1,0 +1,358 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: test-Incident-creation.spec.ts >> test Incident creation @critical
+- Location: tests\test-Incident-creation.spec.ts:3:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible() failed
+
+Locator: getByRole('link', { name: 'Incidents: Plant layout 1793793201654' })
+Expected: visible
+Timeout: 15000ms
+Error: element(s) not found
+
+Call log:
+  - Expect "toBeVisible" getByRole('link', { name: 'Incidents: Plant layout 1793793201654' }) with timeout 15000ms
+  - waiting for getByRole('link', { name: 'Incidents: Plant layout 1793793201654' })
+
+```
+
+```yaml
+- banner:
+  - button ""
+  - link "":
+    - /url: /welcome
+  - link "":
+    - /url: /welcome
+  - text: /
+  - link "Incident Management - Template":
+    - /url: /workspace/3/cover
+  - text: /
+  - button ""
+  - button ""
+  - button ""
+  - text: 
+  - link "":
+    - /url: /dashboard/pending
+  - button ""
+- banner:
+  - text: Incident reports
+  - complementary:
+    - button ""
+    - button ""
+    - link "":
+      - /url: /workspace/3/34l/settings
+    - button ""
+    - text:  Tree view
+    - checkbox [checked]
+- list:
+  - listitem:
+    - list:
+      - listitem:
+        - list:
+          - listitem:  Nr 
+          - listitem: Title
+          - listitem: Description
+          - listitem: Date of occurrence
+          - listitem: Assigned to
+          - listitem: Status
+          - listitem: 
+          - listitem: 
+      - listitem:
+        - table:
+          - rowgroup:
+            - 'row "Incidents: Plant layout 1793793201654    Work in progress "':
+              - cell:
+                - textbox
+              - 'cell "Incidents: Plant layout 1793793201654"':
+                - textbox: "Incidents: Plant layout 1793793201654"
+              - cell:
+                - textbox
+              - cell "":
+                - text: 
+                - textbox
+              - cell ""
+              - cell " Work in progress"
+              - cell ""
+              - cell
+  - listitem:
+    - list:
+      - listitem:
+        - list:
+          - listitem: "21016"
+          - listitem:
+            - link "Bharat Jogarana 1":
+              - /url: /workspace/3/34l/1603
+          - listitem: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since 1966, when designers at Letraset and James Mosley, the librarian at St Bride Printing Library in London, took a 1914 Cicero translation and scrambled it to make dummy text for Letraset's Body Type sheets.
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21015"
+          - listitem:
+            - link "Bharat":
+              - /url: /workspace/3/34l/1602
+          - listitem: Test Description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21013"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674753823"':
+              - /url: /workspace/3/34l/1503
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21012"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674597965"':
+              - /url: /workspace/3/34l/1502
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21011"
+          - listitem:
+            - 'link "Incidents: Plant layout 1793674475529"':
+              - /url: /workspace/3/34l/1501
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21010"
+          - listitem:
+            - 'link "incident: near miss -01"':
+              - /url: /workspace/3/34l/1401
+          - listitem: incident :near miss description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21009"
+          - listitem:
+            - 'link "incident: near miss -01"':
+              - /url: /workspace/3/34l/1302
+          - listitem: incident :near miss description
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21008"
+          - listitem:
+            - 'link "Incidents: Plant layout"':
+              - /url: /workspace/3/34l/1301
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+      - listitem:
+        - list:
+          - listitem: "21007"
+          - listitem:
+            - 'link "Incidents: Plant layout"':
+              - /url: /workspace/3/34l/1201
+          - listitem: "Incidents: Plant layout Description"
+          - listitem: 02/11/2026
+          - listitem: System Administrator
+          - listitem: Incident Created
+          - listitem
+          - listitem
+        - list
+  - listitem:
+    - list:
+      - listitem:
+        - text:  Create new item
+        - list:
+          - listitem: "1"
+        - list:
+          - listitem: "20"
+          - listitem: /
+          - listitem: "50"
+          - listitem: /
+          - listitem: "100"
+        - text: · 9 Items
+  - listitem
+- contentinfo:
+  - text: 2.495.1257.10
+  - link "":
+    - /url: http://www.tenforce.com/
+- heading "Create new 'Incident reports' item" [level=3]
+- text: Concept * 
+- textbox: Incident reports
+- button ""
+- text: Title*
+- textbox
+- text: Type* Incident Near miss Description*
+- textbox: "Incidents: Plant layout Description"
+- text: Immediate Actions
+- textbox
+- text: Photos supporting incident investigation
+- button " Browse / Drop files here":
+  - button " Browse / Drop files here"
+- text: Date of occurrence* 
+- textbox: 02/11/2026
+- text: Time of occurrence
+- textbox
+- text: Department Edit selection
+- paragraph: Which department is responsible for the area where this incident took place.
+- text: Location* Storage Area 
+- link:
+  - /url: "#"
+- text: Edit selection
+- paragraph: The site where this incident took place.
+- paragraph: Create or Create & open or  cancel
+```
+
+# Test source
+
+```ts
+  101 |     await expect(visibleCreateButton).toBeVisible({ timeout: 60_000 });
+  102 |     await this.page.waitForTimeout(10_000);
+  103 |     await visibleCreateButton.click({ force: true, timeout: 60_000 });
+  104 |     await this.page.waitForTimeout(5_000);
+  105 |   }
+  106 | 
+  107 |   async fillBasicDetails(
+  108 |     title: string,
+  109 |     description: string,
+  110 |   ): Promise<void> {
+  111 |     this.lastTitle = title;
+  112 |     await this.titleInput.waitFor({ state: "visible", timeout: 60_000 });
+  113 |     await this.titleInput.fill(title);
+  114 |     await this.descriptionInput.fill(description);
+  115 |     await this.titleInput.fill(title);
+  116 |   }
+  117 | 
+  118 |   async fillNearMissDetails(
+  119 |     title: string,
+  120 |     description: string,
+  121 |     action: string,
+  122 |   ): Promise<void> {
+  123 |     this.lastTitle = title;
+  124 |     await this.titleInput.waitFor({ state: "visible", timeout: 60_000 });
+  125 |     await this.titleInput.fill("");
+  126 |     await this.titleInput.fill(title);
+  127 |     await this.nearMissOption.click();
+  128 |     await this.descriptionInput.fill(description);
+  129 |     await this.actionInput.fill(action);
+  130 |     await this.titleInput.fill(title);
+  131 |   }
+  132 | 
+  133 |   async selectNearMissDateAndTime(): Promise<void> {
+  134 |     await this.datePickerButton.click();
+  135 |     await this.dateOption.click();
+  136 |     await this.hourPickerButton.click();
+  137 |     await this.hourOption.fill("09:00");
+  138 |   }
+  139 | 
+  140 |   async selectNearMissLocation(): Promise<void> {
+  141 |     await this.locationPickerButton.click({ force: true });
+  142 |     if ((await this.locationCheckbox.count()) === 0) return;
+  143 |     await this.locationCheckbox.check();
+  144 |     await this.locationConfirm.click();
+  145 |   }
+  146 | 
+  147 |   async selectNearMissArea(): Promise<void> {
+  148 |     if ((await this.areaPickerButton.count()) === 0) return;
+  149 |     await this.areaPickerButton.click();
+  150 |     await this.areaCheckbox.check();
+  151 |     await this.areaConfirm.click();
+  152 |   }
+  153 | 
+  154 |   async submitAndExpectScriptError(): Promise<void> {
+  155 |     await this.titleInput.fill(this.lastTitle);
+  156 |     await this.commitOpenButton.click();
+  157 |     await expect(this.scriptErrorMessage).toBeVisible();
+  158 |   }
+  159 | 
+  160 |   async selectSeverity(): Promise<void> {
+  161 |     await this.severityPickerButton.click();
+  162 |     await this.severityOption.click();
+  163 |   }
+  164 | 
+  165 |   async selectLocation(): Promise<void> {
+  166 |     await this.customField.click();
+  167 |     await this.locationCheckbox.check();
+  168 |     await this.locationConfirm.click();
+  169 |   }
+  170 | 
+  171 |   async selectArea(): Promise<void> {
+  172 |     if ((await this.areaInput.count()) === 0) return;
+  173 |     await this.areaInput.click();
+  174 |     await this.areaCheckbox.check();
+  175 |     await this.areaConfirm.click();
+  176 |   }
+  177 | 
+  178 |   async dismissNextSaveDialog(): Promise<void> {
+  179 |     this.page.once("dialog", async (dialog) => {
+  180 |       await dialog.accept();
+  181 |     });
+  182 |   }
+  183 | 
+  184 |   async save(): Promise<void> {
+  185 |     await this.titleInput.fill(this.lastTitle);
+  186 |     await this.saveButton.click();
+  187 |   }
+  188 | 
+  189 |   async updateIncidentCategory(category: string): Promise<void> {
+  190 |     const categoryOption = this.page
+  191 |       .locator("#overlay1_overlaywrapper")
+  192 |       .getByText(category, { exact: true });
+  193 |     await expect(categoryOption).toBeVisible({ timeout: 60_000 });
+  194 |     await categoryOption.click();
+  195 |   }
+  196 | 
+  197 |   async expectCreated(title: string): Promise<void> {
+  198 |     await this.cancelButton.click();
+  199 |     await expect(
+  200 |       this.page.getByRole("link", { name: title }),
+> 201 |     ).toBeVisible();
+      |       ^ Error: expect(locator).toBeVisible() failed
+  202 |   }
+  203 | }
+  204 | 
+```
